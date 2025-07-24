@@ -131,10 +131,10 @@ Included visuals:
 
 **Notable Insight:**
 
-> Between **2008 and 2024**, average maximum temperatures surged most sharply — particularly in **Rome**, where values rose by ~2.3°C since 1984.  
-> Meanwhile, **Stockholm** shows warming winters — a sign of **polar amplification**.
+- Between **2008 and 2024**, average maximum temperatures surged most sharply — particularly in **Rome**, where values rose by ~2.3°C since 1984.  
+- Meanwhile, **Stockholm** shows warming winters — a sign of **polar amplification**.
 
-#### Implications:
+Implications:
 
 - **Public Health**: Nighttime warming may increase heat stress in cities like Paris and Warsaw.
 - **Urban Planning**: Infrastructure must adapt to extreme heat, especially in Southern and Central Europe.
