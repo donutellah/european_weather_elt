@@ -96,36 +96,53 @@ data/export/weather.parquet
 
 You can now load this file directly into Power BI or any other analysis tool that supports Parquet format.
 
------------------------
-📊 Insights & Analysis
------------------------
+------------------------------
+📈 Exploratory Data Analysis (EDA) in Python
+------------------------------
 
-We analyzed average daily temperatures across five major European cities — **Paris, Rome, Vienna, Warsaw, and Stockholm** — over select years spanning from **1984 to 2024**, using Power BI for visualization. The data reveals a **clear, decade-over-decade increase in average maximum temperatures**, with the most significant rise occurring **between 2008 and 2024**.
+Before building the dashboard, we explored the data using Python and Jupyter Notebooks to validate trends and identify key insights.
 
-- For example, **Rome's average max temperature in 2024 is ~2.3°C higher than in 1985**, a substantial increase that aligns with Mediterranean heatwave patterns.
-- **Stockholm**, while generally cooler, shows a consistent upward trend in minimum temperatures, suggesting **less cold nights and warmer winters** in Northern Europe — a classic signal of **polar amplification**.
+The following visualizations were generated and saved in the `viz/charts/` folder:
 
-These patterns provide quantitative backing to the broader climate narrative:
+- **`ave_max_temp.png`** – Average maximum temperatures across all cities and years
+- **`ave_min_temp.png`** – Average minimum temperatures by year and region
+- **`temp_per_city.png`** – City-by-city comparison of average temperature changes
+- **`heatmap.png`** – Yearly heatmap showing temperature gradients by city
 
-> "Europe is warming faster than the global average, and urban areas are at the frontlines."
+These revealed:
 
-📌 **Implications:**
+- A **clear upward trend** in temperatures across all five cities studied
+- **Rome** and **Paris** showed the most pronounced increases in maximum temperatures
+- **Stockholm** displayed steady warming of minimum temperatures, indicating milder winters
+- Signs of **temperature convergence**, with traditionally colder cities warming faster
 
-- **Public health**: Rising nighttime temperatures (especially in Paris and Warsaw) could intensify heat stress and reduce nighttime recovery — a concern for vulnerable populations.
-- **Urban planning**: Cities may need to invest in heat-resilient infrastructure, particularly in southern and central Europe.
-- **Policy-making**: Local governments can use these findings to push for aggressive emissions reduction targets, especially where warming is most pronounced.
+------------------------------
+📊 Power BI Dashboard Insights
+------------------------------
 
-🖥️ **Power BI Dashboard Includes:**
+We built a Power BI report (`viz/European_Weather_Report.pbix`) to present average max temperature trends more interactively.
 
-- City-by-city temperature trend lines
-- Yearly comparison bar charts
-- Heatmaps of temperature patterns
-- Interactable filters by city and year
+Included visuals:
 
-You can find the final Power BI report here:
+- **Line Chart**: `ave_temp_max` over time by city
+- **Map Visualization**: Pinpoints each city’s location
+- **Insight Summary**: Narrative card for interpretation
+- **Matrix Table**: Displays `ave_temp_max` by city and year
 
-📁 `viz/European_Weather_Report.pbix`
+**Notable Insight:**
 
+> Between **2008 and 2024**, average maximum temperatures surged most sharply — particularly in **Rome**, where values rose by ~2.3°C since 1984.  
+> Meanwhile, **Stockholm** shows warming winters — a sign of **polar amplification**.
+
+#### Implications:
+
+- **Public Health**: Nighttime warming may increase heat stress in cities like Paris and Warsaw.
+- **Urban Planning**: Infrastructure must adapt to extreme heat, especially in Southern and Central Europe.
+- **Policy-Making**: These historical patterns can support stronger climate action and localized emission reduction efforts.
+
+📁 The full dashboard is available here:
+
+- `viz/European_Weather_Report.pbix`
 
 -------------------
 📝 License & Credits
